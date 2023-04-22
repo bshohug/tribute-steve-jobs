@@ -120,6 +120,11 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  user-select: none;
+  -drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
 }
 #img-caption {
   text-align: center;
@@ -169,6 +174,7 @@ img {
 .info p {
   color: var(--text-color);
   text-align: justify;
+  font-size: 0.9rem;
 }
 
 /* Timeline dot  */
@@ -300,5 +306,8 @@ input:checked + .slider::before {
   }
   h1 {
     text-align: center;
+  }
+  .info p {
+    font-size: 0.8rem;
   }
 }
